@@ -10,3 +10,49 @@ body {
   align-items: center;     /* 垂直方向中央 */
   height: 100vh;
 }
+
+.menu button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Button reset: remove native appearance but keep accessibility (focus outline) */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  -webkit-appearance: none; /* Safari/Chrome */
+  -moz-appearance: none;    /* Firefox */
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit; /* inherit font styles */
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Keep visible focus for keyboard users; customize as needed */
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+  outline: 3px solid Highlight;
+  outline-offset: 2px;
+}
+
+/* If you want a neutral default look (optional)
+   uncomment and adjust the following block:
+button.default-reset {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.8rem;
+  background: #eee;
+  border-radius: 4px;
+}
+*/
